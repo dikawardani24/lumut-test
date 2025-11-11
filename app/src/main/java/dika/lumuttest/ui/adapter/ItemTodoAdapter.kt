@@ -39,7 +39,8 @@ class ItemTodoAdapter: RecyclerView.Adapter<ItemTodoAdapter.ViewHolder>() {
 
         fun bind(todo: Todo, listener: OnTodoSelected? = null) = with(binding) {
             title.text = todo.title
-            status.setAsStatus(todo.isCompleted)
+            status.setAsStatus(todo.isCompleted, false)
+            statusCv.setAsStatus(todo.isCompleted)
 
             if (listener != null) {
                 root.setOnClickListener { listener.onSelected(todo) }

@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dika.lumuttest.databinding.FragmentTodoDetailBinding
 import dika.lumuttest.domain.Todo
 import dika.lumuttest.util.hideLoading
@@ -13,7 +13,7 @@ import dika.lumuttest.util.showLoading
 import dika.lumuttest.util.showMessage
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class TodoDetailFragment : Fragment() {
+class TodoDetailFragment : BottomSheetDialogFragment() {
     private lateinit var binding: FragmentTodoDetailBinding
     private val viewModel: TodoDetailViewModel by viewModel()
 
