@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dika Wardani</string>
+    <string name="completed">Completed</string>
+    <string name="not_completed">Not Completed</string>
+    <string name="home">Home</string>
+    <string name="detail">Detail</string>
+</resources>
